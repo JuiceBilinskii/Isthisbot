@@ -9,6 +9,6 @@ bot = telebot.TeleBot(BOT_TOKEN)
 def get_text_messages(message):
   words = set(re.findall(r'\w+', message.text.lower()))
   if (KEYS & words):
-    bot.reply_to(message, 'Это та, кто вонюче срет?')
+    bot.send_message(message.chat.id, 'Это та, которая вонюче срет?')
       
 bot.polling()
