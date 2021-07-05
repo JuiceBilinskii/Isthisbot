@@ -1,9 +1,8 @@
-import os
 import re
 import telebot
 
 KEYS = {'ира', 'иры', 'ире', 'иру', 'ирой', 'ирина', 'ирины', 'ирине', 'ирину', 'ириной'}
-BOT_TOKEN = os.environ['BOT_TOKEN']
+BOT_TOKEN = "1835508336:AAFT0olkFzHR70sRQKo6h9P3CEYrArgw1tw"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(content_types=['text'])
